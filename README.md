@@ -11,7 +11,7 @@ I have plotted a pairplot to get a baisc understanding of relationship between v
 
 I plotted a distplot to check whether there was any outliers. There were many outliers.
 
-For removing outliers, I have used for methods :
+For removing outliers, I have used four methods :
 * By using mean and standard deviation
 * Z-score method
 * Percentile method
@@ -19,9 +19,11 @@ For removing outliers, I have used for methods :
 
 I have used both trimming and capping method to remove outliers. Capping is better because it won't remove any row.
 
-# Interquartile method worked best out of all the methods. It removed almost all the outliers.#
+*Interquartile method worked best out of all the methods. It removed almost all the outliers.*
 
-I have drawn a histplot with the given data. It was not normally distributed. 
+# Finding Skewness and Kurtosis
+
+A histplot with the original data was plotted. It was not normally distributed. 
 * Skewness = 108, which means highly right skewed
 * Kurtosis = 12093, which means graph is leptokurtic.
 
@@ -29,7 +31,7 @@ Then, I applied logarithmic transformation on it. The distplot after transformat
 * Skewness = 1.3, which is nearer to 1. So, the graph is less skewed.
 * Kurtosis = 12, which is very less compared with before transformation. It is leptokurtic since kurtosis is greater than 3.
 
-Checked correlation between numerical columns and drawn heatmaps.
+# Correlation and Heatmap using numerical columns
 
 There is a very less linear relationship among column price_per_sqft and bath, price and bhk.
 There is an inverse relationship between column price_per_sqft and total_sqft.
